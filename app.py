@@ -27,7 +27,8 @@ def say(bot, update):
 
 updater = Updater('802581448:AAHSo3ksANNddPYeSWh6WnZ1Gt5hfNeWF7E')
 
-updater.dispatcher.add_handler(CommandHandler('hello', hello))
+updater.dispatcher.add_handler(CommandHandler('add', add))
+updater.dispatcher.add_handler(CommandHandler('say', say))
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                      level=logging.INFO)
